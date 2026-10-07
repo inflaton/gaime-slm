@@ -1,0 +1,24 @@
+experiment_id,model_label,model_name_or_path,prompt,template,lora_rank,lora_alpha,learning_rate,best_step,config_path
+gemma-3-270m-ft-r8,Gemma 3 270M FT,google/gemma-3-270m-it,FT,gemma,8,16,0.0001,1800,configs/train/gemma-3-270m-ft-r8.yaml
+gemma-3-270m-jo-r8,Gemma 3 270M JO,google/gemma-3-270m-it,JO,gemma,8,16,0.0001,2000,configs/train/gemma-3-270m-jo-r8.yaml
+gemma-3-1b-ft-r8,Gemma 3 1B FT,google/gemma-3-1b-it,FT,gemma,8,16,0.0001,1600,configs/train/gemma-3-1b-ft-r8.yaml
+gemma-3-1b-jo-r8,Gemma 3 1B JO,google/gemma-3-1b-it,JO,gemma,8,16,0.0001,1600,configs/train/gemma-3-1b-jo-r8.yaml
+gemma-3-4b-ft-r8,Gemma 3 4B FT,google/gemma-3-4b-it,FT,gemma3,8,16,0.0001,2000,configs/train/gemma-3-4b-ft-r8.yaml
+gemma-3-4b-jo-r8,Gemma 3 4B JO,google/gemma-3-4b-it,JO,gemma3,8,16,0.0001,1600,configs/train/gemma-3-4b-jo-r8.yaml
+qwen-3.5-0.8b-ft-think-r8,Qwen 3.5 0.8B FT,Qwen/Qwen3.5-0.8B,FT,qwen3_5,8,16,0.0001,1600,configs/train/qwen-3.5-0.8b-ft-think-r8.yaml
+qwen-3.5-0.8b-jo-think-r8,Qwen 3.5 0.8B JO,Qwen/Qwen3.5-0.8B,JO,qwen3_5,8,16,0.0001,1200,configs/train/qwen-3.5-0.8b-jo-think-r8.yaml
+qwen-3.5-0.8b-ft-nothink-r8,Qwen 3.5 0.8B FT NT,Qwen/Qwen3.5-0.8B,FT,qwen3_5_nothink,8,16,0.0001,1400,configs/train/qwen-3.5-0.8b-ft-nothink-r8.yaml
+qwen-3.5-0.8b-jo-nothink-r8,Qwen 3.5 0.8B JO NT,Qwen/Qwen3.5-0.8B,JO,qwen3_5_nothink,8,16,0.0001,1600,configs/train/qwen-3.5-0.8b-jo-nothink-r8.yaml
+qwen-3.5-2b-ft-think-r8,Qwen 3.5 2B FT,Qwen/Qwen3.5-2B,FT,qwen3_5,8,16,0.0001,1600,configs/train/qwen-3.5-2b-ft-think-r8.yaml
+qwen-3.5-2b-jo-think-r8,Qwen 3.5 2B JO,Qwen/Qwen3.5-2B,JO,qwen3_5,8,16,0.0001,1400,configs/train/qwen-3.5-2b-jo-think-r8.yaml
+qwen-3.5-2b-ft-nothink-r8,Qwen 3.5 2B FT NT,Qwen/Qwen3.5-2B,FT,qwen3_5_nothink,8,16,0.0001,1400,configs/train/qwen-3.5-2b-ft-nothink-r8.yaml
+qwen-3.5-2b-jo-nothink-r8,Qwen 3.5 2B JO NT,Qwen/Qwen3.5-2B,JO,qwen3_5_nothink,8,16,0.0001,1600,configs/train/qwen-3.5-2b-jo-nothink-r8.yaml
+qwen-3.5-4b-ft-think-r8,Qwen 3.5 4B FT,Qwen/Qwen3.5-4B,FT,qwen3_5,8,16,0.0001,1400,configs/train/qwen-3.5-4b-ft-think-r8.yaml
+qwen-3.5-4b-jo-think-r8,Qwen 3.5 4B JO,Qwen/Qwen3.5-4B,JO,qwen3_5,8,16,0.0001,2000,configs/train/qwen-3.5-4b-jo-think-r8.yaml
+qwen-3.5-4b-ft-nothink-r8,Qwen 3.5 4B FT NT,Qwen/Qwen3.5-4B,FT,qwen3_5_nothink,8,16,0.0001,1600,configs/train/qwen-3.5-4b-ft-nothink-r8.yaml
+qwen-3.5-4b-jo-nothink-r8,Qwen 3.5 4B JO NT,Qwen/Qwen3.5-4B,JO,qwen3_5_nothink,8,16,0.0001,1400,configs/train/qwen-3.5-4b-jo-nothink-r8.yaml
+aya-3.35b-ft-r8,Aya 3.35B FT,CohereLabs/tiny-aya-global,FT,cohere,8,16,0.0001,1600,configs/train/aya-3.35b-ft-r8.yaml
+aya-3.35b-jo-r8,Aya 3.35B JO,CohereLabs/tiny-aya-global,JO,cohere,8,16,0.0001,1400,configs/train/aya-3.35b-jo-r8.yaml
+aya-3.35b-jo-r32,Aya 3.35B JO r32,CohereLabs/tiny-aya-global,JO,cohere,32,64,0.00005,1600,configs/train/aya-3.35b-jo-r32.yaml
+llama-3.1-8b-ft-r8,Llama 3.1-8B FT,meta-llama/Meta-Llama-3.1-8B-Instruct,FT,llama3,8,16,0.0001,2000,configs/train/llama-3.1-8b-ft-r8.yaml
+llama-3.1-8b-jo-r8,Llama 3.1-8B JO,meta-llama/Meta-Llama-3.1-8B-Instruct,JO,llama3,8,16,0.0001,1000,configs/train/llama-3.1-8b-jo-r8.yaml

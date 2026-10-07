@@ -1,0 +1,13 @@
+{
+  "n": 1213,
+  "canonical_precision": 0.7741151977793199,
+  "canonical_recall": 0.5666751333502666,
+  "canonical_f1": 0.65434814488928,
+  "strict_precision": 0.7429690281238875,
+  "strict_recall": 0.5300990601981204,
+  "strict_f1": 0.6187370293507264,
+  "canonical_record_exact_match": 0.42044517724649627,
+  "strict_record_exact_match": 0.36933223413025557,
+  "parse_rate": 0.7403132728771641,
+  "schema_valid_rate": 0.6809563066776587
+}

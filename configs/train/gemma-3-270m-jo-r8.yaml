@@ -1,0 +1,45 @@
+### model
+model_name_or_path: google/gemma-3-270m-it
+
+### method
+stage: sft
+do_train: true
+seed: 42
+data_seed: 42
+finetuning_type: lora
+lora_rank: 8
+lora_alpha: 16
+lora_target: all
+
+### dataset
+dataset: merchant_matching_json_only_train
+dataset_dir: data/llamafactory
+template: gemma
+cutoff_len: 2048
+preprocessing_num_workers: 16
+dataloader_num_workers: 4
+
+### output
+output_dir: outputs/gemma-3-270m-jo-r8
+logging_steps: 10
+save_steps: 200
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+report_to: none
+
+### train
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-4
+num_train_epochs: 6.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+
+### eval
+eval_dataset: merchant_matching_json_only_val
+val_size: 0.0
+per_device_eval_batch_size: 4
+eval_strategy: steps
+eval_steps: 200

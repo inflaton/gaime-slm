@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the ICDM 2026 paper. Apache-2.0 applies to code only; the confidential dataset is not distributed."
+title: "GAIME-SLM: LoRA Fine-Tuning for Merchant Information Extraction"
+type: software
+authors:
+  - family-names: Huang
+    given-names: Donghao
+  - family-names: Drietomský
+    given-names: Tomáš
+  - family-names: Barrett
+    given-names: Benjamin
+  - family-names: Wang
+    given-names: Zhaoxia
+repository-code: "https://github.com/inflaton/gaime-slm"
+license: Apache-2.0
+preferred-citation:
+  type: conference-paper
+  title: "How Small Can You Go? LoRA Fine-Tuning 270M–8B Models for Merchant Information Extraction in Financial Transactions"
+  authors:
+    - family-names: Huang
+      given-names: Donghao
+    - family-names: Drietomský
+      given-names: Tomáš
+    - family-names: Barrett
+      given-names: Benjamin
+    - family-names: Wang
+      given-names: Zhaoxia
+  conference:
+    name: "2026 IEEE International Conference on Data Mining"
+    location: "Shenyang, China"
+  year: 2026
+  url: "https://arxiv.org/abs/2606.08051"
+  # doi: "10.1109/ICDM..."  # add once the proceedings DOI is assigned

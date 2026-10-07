@@ -1,0 +1,11 @@
+-r requirements.txt
+
+# Exact Python package versions recorded by the 16 zero-shot runs.
+# Install the patched LLaMA-Factory checkout described in README.md separately.
+accelerate==1.11.0
+peft==0.18.1
+torch==2.13.0
+transformers==5.2.0
+
+# Optional. Needed only for LLAMA_8B_MODE=4bit, which the camera-ready does not use.
+# bitsandbytes==0.50.1

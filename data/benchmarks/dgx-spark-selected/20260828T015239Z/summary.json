@@ -1,0 +1,64 @@
+{
+  "models": {
+    "llama-8b-ft": {
+      "common_canonical_f1": [
+        0.9668739687777637,
+        0.9668739687777637,
+        0.9668739687777637
+      ],
+      "common_canonical_f1_max": 0.9668739687777637,
+      "common_canonical_f1_min": 0.9668739687777637,
+      "common_strict_record_exact_match": [
+        0.9134377576257213,
+        0.9134377576257213,
+        0.9134377576257213
+      ],
+      "derived_samples_per_second": [
+        0.49916918150714623,
+        0.49746605771176194,
+        0.5027484955806679
+      ],
+      "framework_reported_samples_per_second": [
+        0.499,
+        0.497,
+        0.503
+      ],
+      "max_samples_per_second": 0.5027484955806679,
+      "median_samples_per_second": 0.49916918150714623,
+      "min_samples_per_second": 0.49746605771176194,
+      "predictions_identical_across_repetitions": true,
+      "repetitions": 3
+    },
+    "qwen-4b-jo": {
+      "common_canonical_f1": [
+        0.9651576805696847,
+        0.9651576805696847,
+        0.9651576805696847
+      ],
+      "common_canonical_f1_max": 0.9651576805696847,
+      "common_canonical_f1_min": 0.9651576805696847,
+      "common_strict_record_exact_match": [
+        0.9142621599340478,
+        0.9142621599340478,
+        0.9142621599340478
+      ],
+      "derived_samples_per_second": [
+        0.6120241918839081,
+        0.6104590722161093,
+        0.6119490411704992
+      ],
+      "framework_reported_samples_per_second": [
+        0.612,
+        0.61,
+        0.612
+      ],
+      "max_samples_per_second": 0.6120241918839081,
+      "median_samples_per_second": 0.6119490411704992,
+      "min_samples_per_second": 0.6104590722161093,
+      "predictions_identical_across_repetitions": true,
+      "repetitions": 3
+    }
+  },
+  "llama_over_qwen_inverse_throughput_ratio": 1.225935141514217,
+  "qwen_over_llama_throughput_ratio": 1.225935141514217
+}

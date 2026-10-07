@@ -1,0 +1,22 @@
+{
+  "base_model_revisions": {
+    "affected_training_runs": 23,
+    "status": "not_retained"
+  },
+  "hardware": "NVIDIA DGX Spark (GB10, 128 GB unified memory)",
+  "known_requirements": "requirements-training-known.txt",
+  "not_retained": [
+    "base-model revision hashes for the 23 fine-tuning runs",
+    "exact PyTorch version",
+    "exact CUDA runtime and driver versions",
+    "exact Accelerate version"
+  ],
+  "python": "3.11",
+  "schema_version": 1,
+  "framework": {
+    "llamafactory_upstream_commit": "07798465134da539993c21b263db541e07d47522",
+    "llamafactory_version": "0.9.5.dev0",
+    "peft": "0.18.1",
+    "transformers": "5.2.0"
+  }
+}

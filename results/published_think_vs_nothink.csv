@@ -1,0 +1,13 @@
+model,training_template,training_config,step,f1_score,precision,recall,samples_per_sec_selected_ckpt,samples_per_sec_median_12ckpt,n
+Qwen 3.5 0.8B FT,think (qwen3_5),sft-*-6ep,1600,0.9458,0.9491,0.9426,0.458,0.457,1213
+Qwen 3.5 0.8B FT,nothink (qwen3_5_nothink),sft-*-nothink-6ep,1400,0.9475,0.9479,0.9472,0.548,1.322,1213
+Qwen 3.5 0.8B JO,think (qwen3_5),sft-*-6ep,1200,0.9461,0.9468,0.9454,1.458,0.455,1213
+Qwen 3.5 0.8B JO,nothink (qwen3_5_nothink),sft-*-nothink-6ep,1600,0.9452,0.9463,0.9441,0.497,0.4975,1213
+Qwen 3.5 2B FT,think (qwen3_5),sft-*-6ep,1600,0.951,0.9482,0.9538,0.967,0.9385,1213
+Qwen 3.5 2B FT,nothink (qwen3_5_nothink),sft-*-nothink-6ep,1400,0.9518,0.9511,0.9525,0.979,0.9775,1213
+Qwen 3.5 2B JO,think (qwen3_5),sft-*-6ep,1400,0.9464,0.948,0.9449,0.838,0.8475,1213
+Qwen 3.5 2B JO,nothink (qwen3_5_nothink),sft-*-nothink-6ep,1600,0.9486,0.9478,0.9495,1.022,1.0285,1213
+Qwen 3.5 4B FT,think (qwen3_5),sft-*-6ep,1400,0.9615,0.9619,0.9611,0.206,0.206,1213
+Qwen 3.5 4B FT,nothink (qwen3_5_nothink),sft-*-nothink-6ep,1600,0.9624,0.9629,0.9619,0.489,0.4915,1213
+Qwen 3.5 4B JO,think (qwen3_5),sft-*-6ep,2000,0.966,0.9674,0.9647,0.514,0.507,1213
+Qwen 3.5 4B JO,nothink (qwen3_5_nothink),sft-*-nothink-6ep,1400,0.9624,0.9626,0.9622,0.525,0.525,1213

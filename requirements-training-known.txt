@@ -1,0 +1,7 @@
+-r requirements.txt
+
+# Versions recoverable from the retained fine-tuning artifacts. This is not a
+# complete historical lock: the exact PyTorch, CUDA, and Accelerate versions
+# and the 23 base-model revisions were not retained.
+peft==0.18.1
+transformers==5.2.0

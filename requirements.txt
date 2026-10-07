@@ -1,0 +1,6 @@
+PyYAML>=6.0,<7
+jieba==0.42.1
+nltk==3.10.3
+rouge-chinese==1.0.3
+matplotlib==3.11.1
+pymupdf==1.28.2

@@ -1,0 +1,123 @@
+{
+  "artifact_id": "llama-3.1-8b-ft-r32-production-reference",
+  "attribution": {
+    "lora_rank": 32,
+    "lora_rank_provenance": "author-attested; absent from retained source artifact",
+    "model": "Meta-Llama-3.1-8B-Instruct",
+    "prompt": "Free-Thinking"
+  },
+  "canonical_per_field": [
+    {
+      "f1": 0.943231441048035,
+      "field": "INTERMEDIARY",
+      "precision": 0.9230769230769231,
+      "predicted": 117,
+      "recall": 0.9642857142857143,
+      "tp": 108,
+      "truth": 112
+    },
+    {
+      "f1": 0.953833470733718,
+      "field": "MERCHANT_NAME",
+      "precision": 0.953833470733718,
+      "predicted": 1213,
+      "recall": 0.953833470733718,
+      "tp": 1157,
+      "truth": 1213
+    },
+    {
+      "f1": 0.948051948051948,
+      "field": "DYNAMIC_DESCRIPTOR",
+      "precision": 0.9399141630901288,
+      "predicted": 233,
+      "recall": 0.9563318777292577,
+      "tp": 219,
+      "truth": 229
+    },
+    {
+      "f1": 0.9421265141318979,
+      "field": "STREET",
+      "precision": 0.9433962264150944,
+      "predicted": 371,
+      "recall": 0.9408602150537635,
+      "tp": 350,
+      "truth": 372
+    },
+    {
+      "f1": 0.9881109643328929,
+      "field": "ZIP",
+      "precision": 0.9973333333333333,
+      "predicted": 375,
+      "recall": 0.9790575916230366,
+      "tp": 374,
+      "truth": 382
+    },
+    {
+      "f1": 0.9788897576231431,
+      "field": "CITY",
+      "precision": 0.9842767295597484,
+      "predicted": 636,
+      "recall": 0.973561430793157,
+      "tp": 626,
+      "truth": 643
+    },
+    {
+      "f1": 0.9963054187192119,
+      "field": "STATE",
+      "precision": 0.995079950799508,
+      "predicted": 813,
+      "recall": 0.9975339087546239,
+      "tp": 809,
+      "truth": 811
+    },
+    {
+      "f1": 0.9333333333333333,
+      "field": "COUNTRY",
+      "precision": 1.0,
+      "predicted": 7,
+      "recall": 0.875,
+      "tp": 7,
+      "truth": 8
+    },
+    {
+      "f1": 0.9795918367346939,
+      "field": "PHONE",
+      "precision": 1.0,
+      "predicted": 72,
+      "recall": 0.96,
+      "tp": 72,
+      "truth": 75
+    },
+    {
+      "f1": 0.989010989010989,
+      "field": "WEBSITE",
+      "precision": 1.0,
+      "predicted": 90,
+      "recall": 0.9782608695652174,
+      "tp": 90,
+      "truth": 92
+    }
+  ],
+  "canonical_record_matches": 1129,
+  "coverage": {
+    "common_rows": 1213,
+    "source_only_rows": 1,
+    "source_rows": 1214,
+    "test_only_rows": 9,
+    "test_rows": 1222
+  },
+  "strict_record_matches": 1121,
+  "metrics": {
+    "n": 1213,
+    "canonical_precision": 0.970715558950853,
+    "canonical_recall": 0.968249936499873,
+    "canonical_f1": 0.9694811800610377,
+    "strict_precision": 0.9686783804430863,
+    "strict_recall": 0.9662179324358648,
+    "strict_f1": 0.9674465920651067,
+    "canonical_record_exact_match": 0.9307502061005771,
+    "strict_record_exact_match": 0.9241549876339654,
+    "parse_rate": 1.0,
+    "schema_valid_rate": 0.0
+  }
+}

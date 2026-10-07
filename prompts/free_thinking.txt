@@ -1,0 +1,76 @@
+### Instructions
+
+Please follow the two-step approach below.
+
+---
+
+#### Step 1 (Free-Form Analysis)
+
+1. Analyze the bank transaction on your own without applying any rules or guidelines.
+2. Provide a free-form interpretation of the transaction, focusing on any entities you naturally identify.
+3. Perform this internally, do not return this as an output.
+
+---
+
+#### Step 2 (Rule-Based Classification)
+
+1. Re-analyze the same transaction strictly using the Entity Identification and Classification Rules below.
+2. Return a JSON object containing exactly the keys listed under JSON Output Format.
+3. Leave any key as an empty string if you do not find a corresponding value.
+4. Include no explanations or additional text beyond the JSON object.
+
+---
+
+### Entity Identification and Classification Rules
+
+1. General Approach:
+   - Extract entities without assumptions or constraints.
+   - Identify all possible segments and interpret them contextually.
+   - Consider multiple interpretations for ambiguous segments.
+
+2. Entity Classification Rules:
+    - INTERMEDIARY: Payment facilitators or intermediaries that process payments on behalf of merchants (e.g., SYNTHETIC PAY A, SYNTHETIC PAY B, SYNTHETIC PAY C). Often appears before MERCHANT_NAME.
+        - Example: "SYN* SYNTHETIC MARKET #0001" → {"INTERMEDIARY": "SYN*", "MERCHANT_NAME": "SYNTHETIC MARKET #0001"}
+    - MERCHANT_NAME: Represents the primary business where the transaction occurred.
+        - Merchants with large number of retail locations may include store numbers, Examples: "SYNTHETIC MARKET#0001", "SYNTHETIC CAFE 00002", "SYNTHETIC MART 0000000003", "SYNTHETIC FUEL 00000000004".
+        - If a brand name is immediately followed by product or service text, include the entire portion (Example: "SYNTHETIC SOFTWARE * CLOUD STORAGE" → {"MERCHANT_NAME": "SYNTHETIC SOFTWARE * CLOUD STORAGE"})
+    - DYNAMIC_DESCRIPTOR: Refers to transaction-specific identifiers — like order numbers, reference codes, or invoice details—that often appear in eCommerce (online) transactions and provide clarity on individual purchases.
+        - Examples: "*INV-0001", "-DEMO00002", "* O #00003", "DEMO04", "* DEMO00005", "*DEMO00006"
+    - STREET: Street address.
+        - Typically starts with a number or building identifier, followed by street name and known street suffixes (e.g., ST, AVE, BLVD).
+        - Example: "123 Synthetic AvenueSte 100"
+    - ZIP: 5- or 9-digit postal codes.
+    - CITY: Recognizable US city or town names.
+    - STATE: Commonly a two-letter US state abbreviation (e.g., "VA" for Virginia).
+    - COUNTRY: Two- or three-letter country codes (e.g., "USA", "US").
+    - PHONE: Phone numbers in any format (e.g., "202-555-0100", "2025550101", "+12025550102", "(202)555-0103").
+    - WEBSITE: Website/URL associated with the merchant (e.g., "MERCHANT.EXAMPLE/BILL", "PAY.EXAMPLE/HELP#", "HTTPSWWW.DELIVERY.EXAMPLE").
+
+3. Handling Special Cases:
+    - If a token might fit multiple categories, consider its position or formatting to determine the correct entity type.
+    - If you are unsure about how to label a token, use your best guess.
+    - If duplicate or partially duplicate information (e.g., website, street, city, state, or country) appears at the end of MERCHANT_NAME, remove it from MERCHANT_NAME and assign it to the appropriate entity key.
+    - Omit complete and partial duplicate strings
+
+---
+
+### JSON Output Format
+
+Return your Step 2 classification with exactly these keys and nothing else:
+
+```json
+{
+  "INTERMEDIARY": "",
+  "MERCHANT_NAME": "",
+  "DYNAMIC_DESCRIPTOR": "",
+  "STREET": "",
+  "ZIP": "",
+  "CITY": "",
+  "STATE": "",
+  "COUNTRY": "",
+  "PHONE": "",
+  "WEBSITE": ""
+}
+
+Transaction to Analyze
+TRANSACTION:

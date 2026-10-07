@@ -1,0 +1,8 @@
+{
+  "merchant_matching_train": {"file_name": "train_merchant_matching.json"},
+  "merchant_matching_val": {"file_name": "val_merchant_matching.json"},
+  "merchant_matching_test": {"file_name": "test_merchant_matching.json"},
+  "merchant_matching_json_only_train": {"file_name": "train_merchant_matching_json_only.json"},
+  "merchant_matching_json_only_val": {"file_name": "val_merchant_matching_json_only.json"},
+  "merchant_matching_json_only_test": {"file_name": "test_merchant_matching_json_only.json"}
+}
